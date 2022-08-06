@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-redhat-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jun 16 15:48:43 2022
+# Make data base, printed on Mon Jun 20 19:31:21 2022
 
 # Variables
 
@@ -24,6 +22,8 @@ VSCODE_AGENT_FOLDER = /root/.vscode-server
 VSCODE_LOG_NATIVE = false
 # environment
 MODULEPATH = /etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+# makefile (from 'Make.defines', line 19)
+LIBUNP_NAME = ../libunp.a
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -40,8 +40,14 @@ SHELL = /bin/sh
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
 _ = /usr/bin/make
-# makefile
-MAKEFILE_LIST := 
+# makefile (from 'Make.defines', line 12)
+CFLAGS = -I../lib -g -O2 -D_REENTRANT -Wall
+# makefile (from 'Make.defines', line 38)
+LIBXTI_OBJS = wrapxti.o xti_accept.o xti_flags_str.o xti_getopt.o xti_ntop.o xti_ntop_host.o xti_rdwr.o xti_setopt.o xti_str_opts.o xti_tlook_str.o
+# makefile (from 'Make.defines', line 1)
+MAKEFILE_LIST :=  Makefile Make.defines
+# makefile (from 'Make.defines', line 32)
+LIBGAI_OBJS = 
 # environment
 HISTCONTROL = ignoredups
 # 'override' directive
@@ -59,9 +65,11 @@ VSCODE_CWD = /root
 # environment
 MODULES_RUN_QUARANTINE = LD_LIBRARY_PATH LD_PRELOAD
 # environment
-SSH_CONNECTION = 10.6.50.43 57476 9.135.140.159 36000
+SSH_CONNECTION = 10.6.50.51 60864 9.135.140.159 36000
 # environment
 PATH = /root/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/usr/share/Modules/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin:/root/bin:/root/.ft
+# makefile (from 'Make.defines', line 26)
+LIB_OBJS = connect_nonb.o connect_timeo.o daemon_inetd.o daemon_init.o dg_cli.o dg_echo.o error.o get_ifi_info.o gf_time.o host_serv.o family_to_level.o mcast_leave.o mcast_join.o mcast_get_if.o mcast_get_loop.o mcast_get_ttl.o mcast_set_if.o mcast_set_loop.o mcast_set_ttl.o my_addrs.o read_fd.o readline.o readn.o readable_timeo.o rtt.o signal.o signal_intr.o sock_bind_wild.o sock_cmp_addr.o sock_cmp_port.o sock_ntop.o sock_ntop_host.o sock_get_port.o sock_set_addr.o sock_set_port.o sock_set_wild.o sockfd_to_family.o str_cli.o str_echo.o tcp_connect.o tcp_listen.o tv_sub.o udp_client.o udp_connect.o udp_server.o wraplib.o wrapsock.o wrapstdio.o wrappthread.o wrapunix.o write_fd.o writen.o writable_timeo.o
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
@@ -73,15 +81,21 @@ FPATH = /root/.zsh/completion:/root/.oh-my-zsh/plugins/docker-compose:/root/.oh-
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/0/vscode-ipc-053cc7c7-566d-49f2-a553-94f085a901d8.sock
+VSCODE_IPC_HOOK_CLI = /run/user/0/vscode-ipc-80ba7171-efd0-400c-9b96-95999e11582d.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
 LS_COLORS = 
+# makefile (from 'Make.defines', line 29)
+LIBFREE_OBJS = in_cksum.o inet_ntop.o inet_pton.o
+# makefile (from 'Make.defines', line 40)
+CLEANFILES = core core.* *.core *.o temp.* *.out typescript* *.lc *.lh *.bsdi *.sparc *.uw
 # automatic
 %F = $(notdir $%)
 # environment
 VSCODE_PIPE_LOGGING = true
+# makefile (from 'Make.defines', line 23)
+LIBUNPXTI_NAME = ../libunpxti.a
 # environment
 PWD = /data/learn/myunpv13e/unpv13e
 # default
@@ -102,6 +116,8 @@ MODULESHOME = /usr/share/Modules
 LOGNAME = root
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from 'Make.defines', line 15)
+RANLIB = ranlib
 # automatic
 +F = $(notdir $+)
 # environment
@@ -120,12 +136,14 @@ MAKE = $(MAKE_COMMAND)
 MAKECMDGOALS := all
 # environment
 SHLVL = 4
+# makefile (from 'Make.defines', line 11)
+CC = gcc
 # environment
-XDG_SESSION_ID = 160822
+XDG_SESSION_ID = 178910
 # environment
 USER = root
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := all
 # environment
 LESS = -R
 # automatic
@@ -143,7 +161,7 @@ MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 10.6.50.43 57476 36000
+SSH_CLIENT = 10.6.50.51 60864 36000
 # environment
 MAIL = /var/spool/mail/root
 # environment
@@ -163,11 +181,13 @@ MAKEFILES :=
 # environment
 domain = www.qq.com
 # environment
-TST_HACK_BASH_SESSION_ID = 11964625195816379
+TST_HACK_BASH_SESSION_ID = 4283424079633028
 # environment
 PAGER = less
 # environment
 LC_ALL = C
+# makefile (from 'Make.defines', line 13)
+LIBS = ../libunp.a -lpthread
 # automatic
 ^F = $(notdir $^)
 # default
@@ -176,6 +196,8 @@ SUFFIXES :=
 HISTSIZE = 50000
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile (from 'Make.defines', line 35)
+LIBROUTE_OBJS = get_rtaddrs.o if_indextoname.o if_nameindex.o if_nametoindex.o net_rt_iflist.o net_rt_dump.o sock_masktop.o
 # default
 .RECIPEPREFIX := 
 # default
@@ -186,8 +208,10 @@ LANG = C
 which_declare = typeset -f
 # environment
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# makefile (from 'Make.defines', line 14)
+LIBS_XTI = ../libunpxti.a ../libunp.a -lpthread
 # variable set hash-table stats:
-# Load=87/1024=8%, Rehash=0, Collisions=9/109=8%
+# Load=100/1024=10%, Rehash=0, Collisions=9/130=7%
 
 # Pattern-specific Variable Values
 
@@ -195,9 +219,9 @@ VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 
 # Directories
 
-# . (device 64785, inode 11536329): 55 files, no impossibilities.
+# . (device 64785, inode 11536329): 61 files, no impossibilities.
 
-# 55 files, no impossibilities in 1 directories.
+# 61 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -205,26 +229,55 @@ VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 
 # Files
 
-# Not a target:
 all:
 #  Command line target.
-#  Implicit rule search has been done.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
 #  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 4):
+	@echo "Nothing to make in this directory"
+	@echo "Please read the README file"
+
+distclean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 11):
+	rm -f $(CLEANFILES) config.cache config.log config.status config.h Make.defines Makefile
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2022-06-16 15:49:07.119046403
 #  File has been updated.
-#  Failed to be updated.
-
-# Not a target:
-makefile:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
+#  Successfully updated.
+ 
 
 # Not a target:
 .DEFAULT:
@@ -232,27 +285,34 @@ makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+	rm -f $(CLEANFILES)
+
 # Not a target:
-GNUmakefile:
+Make.defines:
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2022-06-16 15:49:07.127046454
 #  File has been updated.
-#  Failed to be updated.
+#  Successfully updated.
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# Load=7/1024=1%, Rehash=0, Collisions=0/20=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 63 / storage = 529 B / avg = 8 B
-# current buf: size = 8162 B / used = 529 B / count = 63 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 68 / storage = 580 B / avg = 8 B
+# current buf: size = 8162 B / used = 580 B / count = 68 / avg = 8 B
 
-# strcache performance: lookups = 66 / hit rate = 4%
+# strcache performance: lookups = 79 / hit rate = 13%
 # hash-table stats:
-# Load=63/8192=1%, Rehash=0, Collisions=1/66=2%
-# Finished Make data base on Thu Jun 16 15:48:43 2022
+# Load=68/8192=1%, Rehash=0, Collisions=1/79=1%
+# Finished Make data base on Mon Jun 20 19:31:21 2022
 
  
