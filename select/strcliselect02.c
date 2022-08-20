@@ -19,6 +19,7 @@ str_cli(FILE *fp, int sockfd)
 
 		if (FD_ISSET(sockfd, &rset)) {	/* socket is readable */
 			if ( (n = Read(sockfd, buf, MAXLINE)) == 0) {
+				// 如果cli发完了数据EOF, 并且接受到了EOF
 				if (stdineof == 1)
 					return;		/* normal termination */
 				else

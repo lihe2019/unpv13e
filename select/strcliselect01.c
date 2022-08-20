@@ -9,7 +9,8 @@ str_cli(FILE *fp, int sockfd)
 
 	FD_ZERO(&rset);
 	for ( ; ; ) {
-		FD_SET(fileno(fp), &rset);
+		// 这里的fd不是操作系统的fd吗, 如果是怎么回事从0开始呢?
+		FD_SET(fileno(fp), &rset); // fileno: convert file pointer to descriptor
 		FD_SET(sockfd, &rset);
 		maxfdp1 = max(fileno(fp), sockfd) + 1;
 		Select(maxfdp1, &rset, NULL, NULL, NULL);

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 20 19:31:21 2022
+# Make data base, printed on Sat Aug 20 19:00:37 2022
 
 # Variables
 
@@ -18,8 +18,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 .SHELLFLAGS := -c
 # environment
 VSCODE_AGENT_FOLDER = /root/.vscode-server
-# environment
-VSCODE_LOG_NATIVE = false
 # environment
 MODULEPATH = /etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
 # makefile (from 'Make.defines', line 19)
@@ -55,8 +53,6 @@ GNUMAKEFLAGS :=
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/0/bus
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
 vip = 9.9.9.9
 # environment
 LESSOPEN = ||/usr/bin/lesspipe.sh %s
@@ -65,9 +61,9 @@ VSCODE_CWD = /root
 # environment
 MODULES_RUN_QUARANTINE = LD_LIBRARY_PATH LD_PRELOAD
 # environment
-SSH_CONNECTION = 10.6.50.51 60864 9.135.140.159 36000
+SSH_CONNECTION = 10.21.36.13 65072 9.135.140.159 36000
 # environment
-PATH = /root/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/usr/share/Modules/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin:/root/bin:/root/.ft
+PATH = /root/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/remote-cli:/usr/share/Modules/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin:/root/bin:/root/.ft
 # makefile (from 'Make.defines', line 26)
 LIB_OBJS = connect_nonb.o connect_timeo.o daemon_inetd.o daemon_init.o dg_cli.o dg_echo.o error.o get_ifi_info.o gf_time.o host_serv.o family_to_level.o mcast_leave.o mcast_join.o mcast_get_if.o mcast_get_loop.o mcast_get_ttl.o mcast_set_if.o mcast_set_loop.o mcast_set_ttl.o my_addrs.o read_fd.o readline.o readn.o readable_timeo.o rtt.o signal.o signal_intr.o sock_bind_wild.o sock_cmp_addr.o sock_cmp_port.o sock_ntop.o sock_ntop_host.o sock_get_port.o sock_set_addr.o sock_set_port.o sock_set_wild.o sockfd_to_family.o str_cli.o str_echo.o tcp_connect.o tcp_listen.o tv_sub.o udp_client.o udp_connect.o udp_server.o wraplib.o wrapsock.o wrapstdio.o wrappthread.o wrapunix.o write_fd.o writen.o writable_timeo.o
 # environment
@@ -79,9 +75,9 @@ MODULES_CMD = /usr/share/Modules/libexec/modulecmd.tcl
 # environment
 FPATH = /root/.zsh/completion:/root/.oh-my-zsh/plugins/docker-compose:/root/.oh-my-zsh/plugins/docker:/root/.oh-my-zsh/plugins/git:/root/.oh-my-zsh/functions:/root/.oh-my-zsh/completions:/root/.oh-my-zsh/cache/completions:/usr/share/Modules/init/zsh-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.5.1/functions
 # environment
-VSCODE_LOG_STACK = false
+ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/0/vscode-ipc-80ba7171-efd0-400c-9b96-95999e11582d.sock
+VSCODE_IPC_HOOK_CLI = /run/user/0/vscode-ipc-f32aaee6-c1b6-4a62-b972-1f5dc1a82553.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -92,8 +88,6 @@ LIBFREE_OBJS = in_cksum.o inet_ntop.o inet_pton.o
 CLEANFILES = core core.* *.core *.o temp.* *.out typescript* *.lc *.lh *.bsdi *.sparc *.uw
 # automatic
 %F = $(notdir $%)
-# environment
-VSCODE_PIPE_LOGGING = true
 # makefile (from 'Make.defines', line 23)
 LIBUNPXTI_NAME = ../libunpxti.a
 # environment
@@ -139,7 +133,7 @@ SHLVL = 4
 # makefile (from 'Make.defines', line 11)
 CC = gcc
 # environment
-XDG_SESSION_ID = 178910
+XDG_SESSION_ID = 82967
 # environment
 USER = root
 # makefile
@@ -156,12 +150,14 @@ OLDPWD = /root
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
+# environment
+mip = 114.132.163.15
 # makefile
 MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 10.6.50.51 60864 36000
+SSH_CLIENT = 10.21.36.13 65072 36000
 # environment
 MAIL = /var/spool/mail/root
 # environment
@@ -169,7 +165,7 @@ LOADEDMODULES =
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
-BROWSER = /root/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/helpers/browser.sh
+BROWSER = /root/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/helpers/browser.sh
 # environment
 S_COLORS = auto
 # environment
@@ -181,7 +177,7 @@ MAKEFILES :=
 # environment
 domain = www.qq.com
 # environment
-TST_HACK_BASH_SESSION_ID = 4283424079633028
+TST_HACK_BASH_SESSION_ID = 1408669329687576
 # environment
 PAGER = less
 # environment
@@ -206,12 +202,10 @@ MAKE_HOST := x86_64-redhat-linux-gnu
 LANG = C
 # environment
 which_declare = typeset -f
-# environment
-VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # makefile (from 'Make.defines', line 14)
 LIBS_XTI = ../libunpxti.a ../libunp.a -lpthread
 # variable set hash-table stats:
-# Load=100/1024=10%, Rehash=0, Collisions=9/130=7%
+# Load=97/1024=9%, Rehash=0, Collisions=9/127=7%
 
 # Pattern-specific Variable Values
 
@@ -219,9 +213,9 @@ LIBS_XTI = ../libunpxti.a ../libunp.a -lpthread
 
 # Directories
 
-# . (device 64785, inode 11536329): 61 files, no impossibilities.
+# . (device 64785, inode 11536329): 66 files, no impossibilities.
 
-# 61 files, no impossibilities in 1 directories.
+# 66 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -277,7 +271,6 @@ Makefile:
 #  Last modified 2022-06-16 15:49:07.119046403
 #  File has been updated.
 #  Successfully updated.
- 
 
 # Not a target:
 .DEFAULT:
@@ -289,6 +282,7 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 8):
 	rm -f $(CLEANFILES)
 
@@ -307,12 +301,12 @@ Make.defines:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 68 / storage = 580 B / avg = 8 B
-# current buf: size = 8162 B / used = 580 B / count = 68 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 73 / storage = 625 B / avg = 8 B
+# current buf: size = 8162 B / used = 625 B / count = 73 / avg = 8 B
 
-# strcache performance: lookups = 79 / hit rate = 13%
+# strcache performance: lookups = 84 / hit rate = 13%
 # hash-table stats:
-# Load=68/8192=1%, Rehash=0, Collisions=1/79=1%
-# Finished Make data base on Mon Jun 20 19:31:21 2022
+# Load=73/8192=1%, Rehash=0, Collisions=1/84=1%
+# Finished Make data base on Sat Aug 20 19:00:37 2022
 
  

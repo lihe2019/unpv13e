@@ -7,6 +7,6 @@ sig_chld(int signo)
 	int		stat;
 
 	pid = wait(&stat);
-	printf("child %d terminated\n", pid);
+	printf("child %d terminated from sigchldwait hoel\n", pid);
 	return;
 }

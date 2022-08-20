@@ -7,3 +7,4 @@ config.status
 *.a
 .idea
 .vscode
+.vscode/*
